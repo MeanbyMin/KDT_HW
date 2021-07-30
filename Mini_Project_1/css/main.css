@@ -1,9 +1,9 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-.header {
+.Header {
   align-items: center;
   display: flex;
   font-size: 14px;
@@ -14,36 +14,30 @@ body {
   z-index: 32;
 }
 
-.container {
-  width: 980px;
-  /* margin: auto; */
+.Header-item {
+  align-self: stretch;
+  margin: 0;
+  margin-right: 16px;
 }
 
-
-.logo {
-  margin-right: 5px;
-  float: left;
-  color: white;
+.Header, .Header-item {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.logo img {
-  display: block;
+.Header-item .logo img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu {
-  align-self: center;
+  list-style: none;
 }
 
 .menu-item {
   font-size: 14px;
   font-weight: 600;
   padding: 10px 10px;
-  float: left;
   line-height: 1;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
