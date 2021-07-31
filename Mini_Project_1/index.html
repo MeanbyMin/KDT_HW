@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GitHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.css">
   <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
@@ -27,19 +30,80 @@
 
 <body>
   <header class="Header">
-    <div class="Header-item">
-      <a href="/" class="logo">
-        <img src="./img/github.png" alt="GitHub Logo" width="32px" height="32px">
-      </a>
+    <div class="container">
+      <div class="Header-item">
+        <a href="#" class="logo">
+          <img src="./img/github.png" alt="GitHub Logo" width="32px">
+        </a>
+      </div>
+      <div class="Header-Menu">
+        <nav>
+          <ul class="Menu-box list-style-none">
+            <li class="menu-item drop-down">
+              Why GitHub?
+              <!-- <ul class="list-style-none">
+                <li>Features</li>
+                <li>Mobile</li>
+                <li>Actions</li>
+                <li>Codespaces</li>
+                <li>Packages</li>
+                <li>Security</li>
+                <li>Code review</li>
+                <li>Issues</li>
+                <li>Integrations</li>
+                <li>GitHub Sponsors</li>
+                <li>Customer stories</li>
+              </ul> -->
+            </li>
+            <li class="menu-item">Team</li>
+            <li class="menu-item">Enterprise</li>
+            <li class="menu-item drop-down">
+              Explore
+              <!-- <ul class="list-style-none">
+                <li>Explore GitHub</li>
+                <li>Learn and contribute</li>
+                <li>Topics</li>
+                <li>Collections</li>
+                <li>Trending</li>
+                <li>Learning Lab</li>
+                <li>Open source guides</li>
+                <li>Connect with others</li>
+                <li>The ReadME Project</li>
+                <li>Events</li>
+                <li>Community forum</li>
+                <li>GitHub Education</li>
+                <li>GitHub Stars program</li>
+              </ul> -->
+            </li>
+            <li class="menu-item">Marketplace</li>
+            <li class="menu-item drop-down">
+              Pricing
+              <!-- <ul class="list-style-none">
+                <li>Plans</li>
+                <li>Compare plans</li>
+                <li>Contact Sales</li>
+                <li>Education</li>
+              </ul> -->
+            </li>
+          </ul>
+        </nav>
+        <div class="search-login-box">
+          <div class="header-search">
+            <form action="/" class="header-search-form">
+              <label class="form-control">
+                <input type="text" class="header-search">
+                <img src="https://github.githubassets.com/images/search-key-slash.svg" alt=""
+                  class="header-search-slash">
+              </label>
+            </form>
+          </div>
+          <div class="header-login">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign up</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav>
-      <ul class="Header-item menu">
-        <li class="menu-item">Pull requests</li>
-        <li class="menu-item">Issues</li>
-        <li class="menu-item">Marketplace</li>
-        <li class="menu-item">Explore</li>
-      </ul>
-    </nav>
   </header>
 </body>
 
