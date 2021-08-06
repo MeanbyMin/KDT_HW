@@ -28,11 +28,9 @@ alert(msg);
 
 // 아래에 getItemByAmount 함수를 작성하세요.
 function getItemByAmount(data, amount) {
-  let Object = {};
-  const arr = data.filter((list) => list.price <= amount);
-  Object = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i].price > Object.price) Object = arr[i];
-  }
-  return Object;
+  const ListToBuy = data.filter((list) => list.price <= amount);
+  const selectedItem = ListToBuy.reduce((prev, current) => {
+    return prev.price > current.price ? prev : current;
+  });
+  return selectedItem;
 }
